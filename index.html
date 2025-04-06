@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SuaraStart</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0;">
+  <button id="startButton" style="padding: 20px 40px; font-size: 24px;">Start</button>
+
+  <audio id="startSound">
+    <source src="https://voca.ro/14kXGEeUptng.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const startButton = document.getElementById('startButton');
+    const startSound = document.getElementById('startSound');
+
+    startButton.addEventListener('click', () => {
+      startSound.play();
+    });
+  </script>
+</body>
+</html>
